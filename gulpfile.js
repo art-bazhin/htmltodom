@@ -37,7 +37,7 @@ gulp.task('js', function() {
     .pipe(plumber())
     .pipe(concat(
       'script.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('js/'));
 });
 
