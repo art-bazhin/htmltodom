@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Convert your HTML to JavaScript code that creates DOM objects.")
+    meta(property="og:description" content="Convert your HTML to JavaScript code that creates DOM objects.")
+    meta(property="og:title" content="HTML to DOM")
+    //-meta(property="og:url" content="https://chipcore.com/")
+    //-link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href="/css/style.css?v=" + timestamp, type="text/css", rel="stylesheet")
+    title HTML to DOM
+  body
+    div.container.content
+      h1 HTML to DOM
+      div.row
+        div.col-7
+          textarea#input.textarea &lt;!-- Test Example --&gt;&#10;&#10;&lt;div jsvar=&quot;block&quot;&gt;&#10;  &lt;span jsvar=&quot;text&quot; id=&quot;test&quot;&gt;Hello World!&lt;/span&gt;&#10;&lt;/div&gt;
+        div.col-5
+          p.description This tool can help you if you need to write JavaScript DOM elements creation function. 
+          p First of all set <i>jsvar</i> attribute to all of your tags. This attribute is used for naming JavaScript variables. 
+          p Then paste your HTML into the textarea, press the button and get JavaScript code that creates DOM elements.
+          div
+            input#checkbox(type="checkbox" name="checkbox" checked)
+            label(for="checkbox").checkbox Minify HTML
+          div
+            button.button#button Generate
+      h2 JavaScript Code
+      textarea#code.code(readonly) Result code will appear here
+    footer.footer.container Artem Bazhin, 2017
+    script(type="text/javascript", src="/js/script.js?v=" + timestamp)

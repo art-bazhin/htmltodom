@@ -1,0 +1,28 @@
+$gutter = 30px
+
+column(w=1, l = 0, r = 0)
+  box-sizing border-box
+  width 100%  * w
+  padding-left ($gutter / 2)
+  padding-right ($gutter/ 2)
+  vertical-align top
+  margin-left 100% * l
+  margin-right 100% * r
+
+.row
+  margin-left -1 * ($gutter / 2)
+  margin-right  -1 * ($gutter / 2)
+  display flex
+    
+.container
+  width auto
+  box-sizing content-box
+  padding-left ($gutter / 2)
+  padding-right ($gutter / 2)
+  margin 0 auto
+  min-width 960px
+  max-width 1140px
+
+for num in (1..12)
+  .col-{num}
+    column(num / 12)

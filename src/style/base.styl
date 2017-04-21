@@ -1,0 +1,52 @@
+*
+  box-sizing border-box
+
+html
+  background-color $c-bg--dark
+body
+  font-family $f-text
+  background-color $c-bg--dark
+  background linear-gradient(to bottom, $c-bg, $c-bg--dark)
+  background-size 100%
+  background-position static
+  font-weight 400
+  font-size 16px
+  line-height 24px
+  color $c-font
+  padding-top 24px
+
+button, select
+  outline none
+  border none
+  cursor pointer
+  background-color transparent
+
+p
+  margin 12px 0
+  
+h1
+  font-weight 500
+  font-size 40px
+  line-height 48px
+  margin 0 0 48px 0
+  text-align center
+
+h2
+  font-weight 500
+  font-size 24px
+  line-height 36px
+  margin 18px 0
+  text-align center
+  
+input, select
+  appearance none
+  -webkit-appearance none
+
+input[type=number] {-moz-appearance: textfield;}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
