@@ -7,9 +7,8 @@ html(lang="en")
     meta(name="description" content="Convert your HTML to JavaScript code that creates DOM objects.")
     meta(property="og:description" content="Convert your HTML to JavaScript code that creates DOM objects.")
     meta(property="og:title" content="HTML to DOM")
-    //-meta(property="og:url" content="https://chipcore.com/")
     //-link(rel="icon" type="image/png" href="/assets/img/favicon.png")
-    link(href="/css/style.css?v=" + timestamp, type="text/css", rel="stylesheet")
+    link(href="css/style.css?v=" + timestamp, type="text/css", rel="stylesheet")
     title HTML to DOM
   body
     div.container.content
@@ -29,4 +28,4 @@ html(lang="en")
       h2 JavaScript Code
       textarea#code.code(readonly) Result code will appear here
     footer.footer.container Artem Bazhin, 2017
-    script(type="text/javascript", src="/js/script.js?v=" + timestamp)
+    script(type="text/javascript", src="js/script.js?v=" + timestamp)
