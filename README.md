@@ -1,2 +1,2 @@
-# htmltodom
-Convert HTML code to JavaScript that creates DOM objects.
+# HTML to DOM
+Convert your HTML to JavaScript code that creates DOM objects.
