@@ -15,7 +15,7 @@ html(lang="en")
       h1 HTML to DOM
       div.row
         div.col-7
-          textarea#input.textarea &lt;!-- Test Example --&gt;&#10;&#10;&lt;div jsvar=&quot;block&quot;&gt;&#10;  &lt;span jsvar=&quot;text&quot; id=&quot;test&quot;&gt;Hello World!&lt;/span&gt;&#10;&lt;/div&gt;
+          textarea#input.textarea &lt;!-- Test Example --&gt;&#10;&#10;&lt;div jsvar=&quot;block&quot;&gt;&#10;  &lt;p jsvar=&quot;text1&quot; id=&quot;test&quot;&gt;&#10;    Hello World!&#10;  &lt;/p&gt;&#10;  &lt;p jsvar=&quot;text2&quot;&gt;&#10;    You can use parameters in a text: ${p1}, ${p2}.&#10;  &lt;/p&gt;&#10;  &lt;p jsvar=&quot;text3&quot;&gt;&#10;    Also you can use it in attributes:&#10;    &lt;a jsvar="link" href="${url}"&gt;link&lt;/a&gt;.&#10;  &lt;/p&gt;&#10;&lt;/div&gt;
         div.col-5
           p.description This tool can help you if you need to write JavaScript DOM elements creation function. 
           p First of all set <i>jsvar</i> attribute to all of your tags. This attribute is used for naming JavaScript variables. 
