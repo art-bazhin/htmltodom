@@ -97,9 +97,9 @@
       if (parent) {
         var text = JSON.stringify(node.wholeText);
         text = text.substr(1, text.length - 2);
+        text = text.replace(/\'/g, '\\\'');
         validateParameters(text);
         text = text.replace(/\${([^$]+)}/g, '\' + $1 + \'');
-        text = text.replace(/\'/g, '\\\'');
 
         var appendCode = '  ' + parent + '.appendChild(document.createTextNode(\'' + text + '\'));\n';
         appendCode = appendCode.replace(/\+ '' \+/g, '+');
