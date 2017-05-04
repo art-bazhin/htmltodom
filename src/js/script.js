@@ -99,6 +99,7 @@
         text = text.substr(1, text.length - 2);
         validateParameters(text);
         text = text.replace(/\${([^$]+)}/g, '\' + $1 + \'');
+        text = text.replace(/\'/g, '\\\'');
 
         var appendCode = '  ' + parent + '.appendChild(document.createTextNode(\'' + text + '\'));\n';
         appendCode = appendCode.replace(/\+ '' \+/g, '+');
